@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Galiatha｜Info</title>
+  <meta name="description" content="Official Website">
+  <meta name="theme-color" content="#f54254">
+  <link rel="icon" type="image/png" sizes="300x250" href="assets/img/R.png">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--<title>Responsive Navigation Menu Bar</title>-->
+  <title>Galiatha</title>
+  <meta name="description" content="Official Website">
+  <meta name="theme-color" content="#f54254">
+  <link rel="icon" type="image/png" sizes="300x250" href="img/R.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="Home.html">Galiatha</a></span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="Home.html">Galiatha</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Commands.html">Commands</a></li>
+          <li><a href="Request.html">Request</a></li>
+
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <script>
+
+    const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark-mode") {
+      body.classList.add("dark");
+    }
+
+    // js code to toggle dark and light mode
+    modeToggle.addEventListener("click", () => {
+      modeToggle.classList.toggle("active");
+      body.classList.toggle("dark");
+
+      // js code to keep user selected mode even page refresh or file reopen
+      if (!body.classList.contains("dark")) {
+        localStorage.setItem("mode", "light-mode");
+      } else {
+        localStorage.setItem("mode", "dark-mode");
+      }
+    });
+
+    // js code to toggle search box
+    searchToggle.addEventListener("click", () => {
+      searchToggle.classList.toggle("active");
+    });
+
+
+    //   js code to toggle sidebar
+    sidebarOpen.addEventListener("click", () => {
+      nav.classList.add("active");
+    });
+
+    body.addEventListener("click", e => {
+      let clickedElm = e.target;
+
+      if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+        nav.classList.remove("active");
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
+
+<header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
+  style="height: 1238px;text-align: center;margin: 90px;"><img class="rounded" src="assets/img/R.png" width="150"
+    height="150" style="margin-bottom: 30px;">
+
+  
+<header class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);"><p>Privacy Policy for Discord Moderation, Fun, and Minecraft Server Advertisement Bot
+
+<br>We take your privacy seriously and are committed to protecting your personal information. This privacy policy describes how we collect, use, and share your information when you use our Discord moderation, fun, and Minecraft server advertisement bot.
+<br>
+<br>Information We Collect
+<br>When you use our bot, we may collect the following information:<br>
+<br>Discord server information, including server ID, name, and member count
+<br>Discord user information, including user ID and username
+<br>Minecraft server information, including server name and IP address
+<br>Interaction with our bot, including commands used and responses received
+<br><br>We do not collect any personal information such as email addresses, phone numbers, or physical addresses.
+<br>
+<br>Use of Information
+<br>We use the information we collect for the following purposes:
+<br>To provide our services, including moderation, fun, and Minecraft server advertisement
+<br>To improve our services and develop new features
+<br>To analyze usage trends and monitor the performance of our bot
+<br>To respond to user inquiries and support requests
+<br>To enforce our terms of service and comply with legal requirements<br>
+<br>Sharing of Information
+<br>We do not share your information with third parties, except in the following circumstances:
+<br>With your consent
+<br>With our service providers who assist us in providing our services
+<br>When required by law or in response to a valid legal request
+<br>
+<br>Security of Information
+<br>We take reasonable measures to protect your information from unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure. Therefore, we cannot guarantee the absolute security of your information.
+<br>
+<br>Children's Privacy
+<br>Our bot is not intended for use by children under the age of 13. We do not knowingly collect or solicit personal information from children under 13. If we become aware that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information.
+<br>
+<br>Changes to Privacy Policy
+<br>We may update this privacy policy from time to time by posting a new version on our website or in our Discord server. Your continued use of our bot after such modifications constitutes your acceptance of the revised policy.
+<br>
+<br>Contact Us
+<br>If you have any questions or concerns about our privacy policy, please contact us at <a href="mailto:jb9365a@gmail.com"><u>Here</u></a>.
+<br>
+<br>By using our Discord moderation, fun, and Minecraft server advertisement bot, you acknowledge that you have read and understood this privacy policy and agree to our collection, use, and sharing of your information as described herein. We Recomend You Check Out Our <a href="Info.html"><u>Terms Of Service</u></a>.</p>
+
+</header>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/Counting.js"></script>
+  <script src="assets/js/untitled.js"></script>
+
+  

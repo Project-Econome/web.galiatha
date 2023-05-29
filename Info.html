@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Galiatha｜Info</title>
+  <meta name="description" content="Official Website">
+  <meta name="theme-color" content="#f54254">
+  <link rel="icon" type="image/png" sizes="300x250" href="assets/img/R.png">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--<title>Responsive Navigation Menu Bar</title>-->
+  <title>Galiatha</title>
+  <meta name="description" content="Official Website">
+  <meta name="theme-color" content="#f54254">
+  <link rel="icon" type="image/png" sizes="300x250" href="img/R.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="Home.html">Galiatha</a></span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="Home.html">Galiatha</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Commands.html">Commands</a></li>
+          <li><a href="Request.html">Request</a></li>
+
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <script>
+
+    const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+    let getMode = localStorage.getItem("mode");
+    if (getMode && getMode === "dark-mode") {
+      body.classList.add("dark");
+    }
+
+    // js code to toggle dark and light mode
+    modeToggle.addEventListener("click", () => {
+      modeToggle.classList.toggle("active");
+      body.classList.toggle("dark");
+
+      // js code to keep user selected mode even page refresh or file reopen
+      if (!body.classList.contains("dark")) {
+        localStorage.setItem("mode", "light-mode");
+      } else {
+        localStorage.setItem("mode", "dark-mode");
+      }
+    });
+
+    // js code to toggle search box
+    searchToggle.addEventListener("click", () => {
+      searchToggle.classList.toggle("active");
+    });
+
+
+    //   js code to toggle sidebar
+    sidebarOpen.addEventListener("click", () => {
+      nav.classList.add("active");
+    });
+
+    body.addEventListener("click", e => {
+      let clickedElm = e.target;
+
+      if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+        nav.classList.remove("active");
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
+
+<header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
+  style="height: 1138px;text-align: center;margin: 90px;"><img class="rounded" src="assets/img/R.png" width="150"
+    height="150" style="margin-bottom: 30px;">
+
+  
+<header class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);"><p><br>Terms of Service for Discord Moderation, Fun, and Minecraft Server Advertisement Bot
+<br>Welcome to Galiatha! Before using our services, please read the following terms of service carefully. By using our bot, you agree to abide by these terms and conditions.
+<br><br>
+<br>1. Use of Bot
+<br>Our Discord bot is designed to enhance your Discord experience by providing moderation, fun, and Minecraft server advertisement services. You may use our bot to manage your Discord server, entertain your members, and promote your Minecraft server, subject to the limitations set forth in these terms of service.
+<br>
+<br>2. Prohibited Conduct
+<br>You may not use our bot to engage in any of the following activities:
+<br>
+<br>• Harassment, bullying, or hate speech towards any individual or group
+<br>• Spamming or flooding the chat with excessive messages
+<br>• Posting or sharing any illegal or explicit content
+<br>• Impersonating any person or entity, including our bot or its administrators
+<br>• Engaging in any activity that violates Discord's Terms of Service or Community Guidelines
+<br>• Using our bot to promote a Minecraft server that violates Mojang's terms of service or the Minecraft EULA
+<br><br>3. Disclaimer of Liability
+<br>Our bot is provided "as is" and without warranty of any kind. We make no guarantees as to the accuracy, reliability, or usefulness of our services. We shall not be liable for any damages arising from the use or inability to use our bot, including but not limited to direct, indirect, incidental, punitive, and consequential damages.
+<br>
+<br>4. Indemnification
+<br>You agree to indemnify and hold harmless our bot, its developers, and its administrators from any and all claims, damages, and expenses, including attorneys' fees, arising from your use of our services or your violation of these terms of service.
+<br>
+<br>5. Modifications to Bot or Terms of Service
+<br>We reserve the right to modify, suspend, or discontinue our bot or any part of our services at any time without notice. We also reserve the right to modify these terms of service at any time by posting the revised terms on our website or in our Discord server. Your continued use of our bot after such modifications constitutes your acceptance of the revised terms.
+<br>
+<br>6.Termination of Service
+<br>We reserve the right to terminate your access to our bot at any time and for any reason, including but not limited to your violation of these terms of service.
+<br>
+<br>7.Governing Law and Jurisdiction
+<br>These terms of service shall be governed by and construed in accordance with the laws of the jurisdiction in which our bot is operated. Any legal action arising from these terms shall be brought in the appropriate court within that jurisdiction.
+<br>
+<br>By using our Discord moderation, fun, and Minecraft server advertisement bot, you acknowledge that you have read and understood these terms of service and agree to be bound by them. If you do not agree to these terms, you should not use our bot If You Do We Recomend You Check Out Our <a href="Info2.html"><u>Privacy Policy</u></a></p>
+
+</header>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/Counting.js"></script>
+  <script src="assets/js/untitled.js"></script>
+
+  
