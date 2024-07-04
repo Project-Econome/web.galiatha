@@ -1,199 +1,56 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Galiatha｜Home</title>
-  <meta name="description" content="Official Website">
-  <meta name="theme-color" content="#f54254">
-  <link rel="icon" type="image/png" sizes="300x250" href="assets/img/R.png">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  
-
-</head>
-
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ===== CSS ===== -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- ===== Boxicons CSS ===== -->
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-  <!--<title>Responsive Navigation Menu Bar</title>-->
-  <title>Galiatha</title>
-  <meta name="description" content="Official Website">
-  <meta name="theme-color" content="#f54254">
-  <link rel="icon" type="image/png" sizes="300x250" href="img/R.png">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galiatha</title>
+    <link rel="stylesheet" href="style.css">
+  <div class="heading">
+    <h1>Galiatha</h1>
+</div>
 </head>
-
+  
+  
+  
 <body>
-  <nav>
-    <div class="nav-bar">
-      <i class='bx bx-menu sidebarOpen'></i>
-      <span class="logo navLogo"><a href="Home.html">Galiatha</a></span>
-
-      <div class="menu">
-        <div class="logo-toggle">
-          <span class="logo"><a href="Home.html">Galiatha</a></span>
-          <i class='bx bx-x siderbarClose'></i>
+  
+    <div class="hotbar">
+        <div class="slot" onclick="navigateTo('index.html')" data-tooltip="Home">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(8).png?v=1719850176852" alt="Home">
         </div>
-
-        <ul class="nav-links">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Commands.html">Commands</a></li>
-          <li><a href="Request.html">Request</a></li>
-
-        </ul>
-      </div>
-
-      <div class="darkLight-searchBox">
-        <div class="dark-light">
-          <i class='bx bx-moon moon'></i>
-          <i class='bx bx-sun sun'></i>
+        <div class="slot" onclick="navigateTo('about.html')" data-tooltip="About">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(14).png?v=1719858719596" alt="About">
         </div>
-
-        <div class="searchBox">
-          <div class="searchToggle">
-
-          </div>
-
-
+        <div class="slot" onclick="navigateTo('contact.html')" data-tooltip="Contact">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(11).png?v=1719856427927" alt="Contact">
         </div>
-      </div>
+        <div class="slot"  data-tooltip="Empty">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(12).png?v=1719856486795" alt="Empty">
+        </div>
+        <div class="slot" onclick="navigateTo('secret.html')" data-tooltip="Diamond">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/Diamond_JE3_BE3%20(1).webp?v=1719848392376" alt="FAQ">
+        </div>
+        <div class="slot"  data-tooltip="Empty">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(12).png?v=1719856486795blog-icon.png" alt="Empty">
+        </div>
+        <div class="slot" onclick="navigateTo('team.html')" data-tooltip="Team">
+            <img src="https://cdn.glitch.global/9f79e0ef-a541-4929-b963-37d4288f7da0/New%20Piskel%20(13).png?v=1719857760909" alt="Team">
+        </div>
+        
+        <div class="slot" onclick="navigateTo('privacy.html')" data-tooltip="Privacy Policy">
+            <img src="gallery-icon.png" alt="Privacy">
+        </div>
+        <div class="slot" onclick="navigateTo('tos.html')" data-tooltip="Terms Of Service">
+            <img src="contact-icon.png" alt="TOS">
+        </div>
+      
+      <!-- Single Tooltip Container -->
+    <div class="tooltip1"></div>
+      
     </div>
-    </div>
-  </nav>
 
-  <script>
+    
 
-    const body = document.querySelector("body"),
-      nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle"),
-      sidebarOpen = document.querySelector(".sidebarOpen"),
-      siderbarClose = document.querySelector(".siderbarClose");
-
-    let getMode = localStorage.getItem("mode");
-    if (getMode && getMode === "dark-mode") {
-      body.classList.add("dark");
-    }
-
-    // js code to toggle dark and light mode
-    modeToggle.addEventListener("click", () => {
-      modeToggle.classList.toggle("active");
-      body.classList.toggle("dark");
-
-      // js code to keep user selected mode even page refresh or file reopen
-      if (!body.classList.contains("dark")) {
-        localStorage.setItem("mode", "light-mode");
-      } else {
-        localStorage.setItem("mode", "dark-mode");
-      }
-    });
-
-    // js code to toggle search box
-    searchToggle.addEventListener("click", () => {
-      searchToggle.classList.toggle("active");
-    });
-
-
-    //   js code to toggle sidebar
-    sidebarOpen.addEventListener("click", () => {
-      nav.classList.add("active");
-    });
-
-    body.addEventListener("click", e => {
-      let clickedElm = e.target;
-
-      if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
-        nav.classList.remove("active");
-      }
-    });
-
-  </script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-<header class="d-xl-flex flex-column justify-content-xl-center align-items-xl-center"
-  style="height: 418px;text-align: center;margin: 90px;"><img class="rounded" src="assets/img/R.png" width="150"
-    height="150" style="margin-top: 30px;">
-  <h1 class="d-xl-flex justify-content-xl-start" style="color: var(--text-color);">Welcome Minecrafter</h1>
-  <p style="color: var(--secondary-text-color);">Click The Button Below To Invite Me!</p>
-
-  
-
-  <a href="https://discord.com/api/oauth2/authorize?client_id=1075076008895598613&permissions=8&scope=bot"><button type="button" class="button">
-		<span class="button__text">Invite Me!</span>
-		<span class="button__icon">
-			<ion-icon name="logo-discord"></ion-icon>
-		</span>
-	</button></a> 
-  
-  <a style="margin-top: 9px;" href="https://top.gg/bot/1075076008895598613/vote"><button type="button" class="button">
-		<span class="button__text">Vote</span>
-		<span class="button__icon">
-			<ion-icon name="shield-checkmark-outline"></ion-icon>
-		</span>
-	</button></a>
-  
-</div>
-  </div>
-  <div class="col item social"><a class="smoothScroll" href="Info.html"><i><img class="rounded" src="assets/img/H.png"
-      width="35" height="35" style="margin-top: 9px;"></i></a>
-        </div>
-</header>
-<div id="feature" style="height: 45px;background: var( --body-color);">
-  <div>
-    <path fill="var( --body-color)" fill-opacity="1"
-      d="M0,96L40,112C80,128,160,160,240,144C320,128,400,64,480,48C560,32,640,64,720,69.3C800,75,880,53,960,58.7C1040,64,1120,96,1200,96C1280,96,1360,64,1400,48L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
-    </path>
-    </svg>
-  </div>
-</div>
-
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5890540158486845"
-      crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/Counting.js"></script>
-    <script src="assets/js/untitled.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('fradz_lifez', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': '',
-    'floating-chat.donateButton.background-color': '#00b9fe',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
-
-   
-
- 
